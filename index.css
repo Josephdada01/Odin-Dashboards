@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'robotoregular';
+}
+
+li {
+    list-style-type: none;
+    font-family: 'robotobold';
+    line-height: 2rem;
+}
+
+.menu-1 > ul {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+}
+
+span {
+    font-family: 'robotobold';
+}
+
+
+.dashboard {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+span, .icon, .profile {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+fieldset {
+    border: none;
+    padding-left: 10px;
+}
+
+legend {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-family: 'robotobold';
+    color: #454545;
+}
+
+input {
+    width: 500px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #e2e8f0;
+    padding-left: 10px;
+}
+
+.dashboard {
+    min-height: 35px;
+    font-family: 'robotobold';
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+
+.dash {
+    font-size: 25px;
+    margin-top: 4px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    /*grid-template-rows: 1fr 4fr;*/
+}
+
+.sidebar {
+    background-color: #0f172a;
+    color: white;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 10px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 1.1rem;
+    font-family: 'robotobold';
+    padding: 20px 0px 0px 20px;
+    color: #0f172a;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-family: 'robotobold';
+    padding: 20px 0px 0px 20px;
+    color: #454545;
+}
+
+p {
+    font-size: 0.9rem;
+    font-family: 'robotoregular';
+    padding: 0px 10px 15px 20px;
+    overflow: hidden;
+}
+
+.smaller {
+    font-size: 0.8rem;
+}
+
+hr.solid {
+    border-bottom: 1px solid #454545;
+    opacity: 30%;
+    width: 300px;
+    margin-left: 25px
+}
+
+img {
+    grid-column: 1 / 2;
+    color: white;
+    max-height: 1.2rem;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color:#454545;
+    font-family: 'robotobold';
+}
+
+button {
+    color: white;
+    background-color: #64748b;
+    border-style: none;
+    border-radius: 20px;
+    padding: 10px;
+    max-height: 2.5rem;
+    width: 7rem;
+    font-family: 'robotobold';
+}
+
+.logo {
+    grid-row: 1 / 2;
+    font-family: 'robotobold';
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    max-height: 3rem;
+}
+
+.menu-1 {
+    min-width: 150px;
+    grid-row: 2 / 3;
+    place-content: start;
+    margin-top: -100px;
+}
+
+.menu-2 {
+    grid-row: 3 / 4;
+    place-content: start;
+    max-height: 7rem;
+    margin-top: 15px;
+}
+
+.menu-1, .menu-2 {
+    gap: 5px;
+}
+
+.header-profile-2 {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    background-image: url("images/joseph-profile.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    place-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.profile {
+    max-height: 20px;
+    max-width: 20px;
+    border-radius: 50%;
+    background-image: url("https://med.gov.bz/wp-content/uploads/2020/08/dummy-profile-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.greeting, .username {
+    grid-column: 2 / 3;
+}
+
+.header {
+    background-color: #64748b;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    position: relative;
+    z-index: 10;
+    grid-column:  2 / span 4;
+    grid-row: 1 / 2;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 30px 0px 0px 30px;
+    height: 150px;
+    border-bottom: none;
+}
+
+.header-top{
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    border-bottom: none;
+}
+
+.magnify-icons{
+    background-image: url('icons/magnify.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px; /* Adjust icon size as needed*/
+    height: 25px;
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+    padding-right: 10px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 500px; /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure button doesn't overflow */
+    height: 25px;
+}
+
+input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    font-size: 16px;
+    outline: none; /* Remove input outline */
+}
+
+button[type="submit"] {
+    background-color: #64748b; /* Example color */
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    outline: none; /* Remove button outline */
+}
+
+button[type="submit"] img {
+    width: 20px; /* Adjust icon size as needed */
+    height: 20px;
+}
+
+.alarm-icons {
+    background-image: url('icons/alarm-light.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+    margin-left: 150px;
+}
+
+.profile-image {
+    background-image: url('images/joseph-profile.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    border-radius: 50%;
+    /*border-radius: 5px;*/
+    margin-top: -100;
+}
+.profile-sidebar {
+    display: flex;
+    /*align-items: center;*/
+    gap: 10px;
+    padding: 1;
+}
+
+
+.profile-text {
+    color: #0f172a;
+    margin-left: 15px;
+    margin-right: -100px;
+    margin-top: 8px;
+    display: inline-block;
+}
+.header-bottom {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    align-items: center;
+    gap: 20px; 
+    padding-top: 15px;
+}
+.headings {
+    grid-column: 2 / 3;
+}
+
+
+.main-content {
+    background-color: #ccc;
+    font-size: 18px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    padding: 30px 10px 50px 10px;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.projects > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    background-color: #a1a1aa;
+    min-height: 12rem;
+    border-radius: 10px;
+    box-shadow: 2px 11px 11px -5px rgba(0,0,0,0.33);
+    border-left: 7px solid #0f172a;
+}
+.but{
+    color: #ccc;
+    background-color: #0f172a;
+}
+
+.announce-card, .trending-card {
+    background-color: #a1a1aa;
+    min-height: 15.5rem;
+    border-radius: 10px;
+    box-shadow: 2px 11px 11px -5px rgba(0,0,0,0.33);
+    border-left: 7px solid #0f172a;
+}
+
+.announcements {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.trending {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+.profile {
+    margin-left: -80px;
+}
+
+
+.left-bottom {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 10px;
+    margin-left: -800px;
+}
+.header-buttons {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin-top: -50px;
+}
+
+.right-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.username {
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #0f172a;
+}
+
+.greeting {
+    margin-bottom: -10px;
+    font-size: 0.9em;
+    color: #0f172a;
+}
+
+.headings {
+    grid-column: 2 / 3;
+}
+
+.trending-card {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    padding: 20px 10px 0px 20px;
+}
+
+.people-trending {
+    min-width: 200px;
+    min-height: 40px;
+    font-size: 0.9rem;
+    font-family: 'robotobold';
+    grid-column: 2 / 3;
+    margin-left: 50px;
+}
+
+.people-trending > p {
+    font-family: 'robotomedium';
+    font-style: italic;
+    color: #454545;
+    margin-top: 5px;
+    margin-left: -20px;
+}
+
+.people-trending-1 {
+    grid-row: 1 / 2;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+    background-image: url("https://med.gov.bz/wp-content/uploads/2020/08/dummy-profile-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.people-trending-2 {
+    grid-row: 2 / 3;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+    background-image: url("https://med.gov.bz/wp-content/uploads/2020/08/dummy-profile-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.people-trending-3 {
+    grid-row: 3 / 4;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+    background-image: url("https://med.gov.bz/wp-content/uploads/2020/08/dummy-profile-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.people-trending-4 {
+    grid-row: 4 / 5;
+    max-height: 40px;
+    max-width: 40px;
+    border-radius: 50%;
+    background-image: url("https://med.gov.bz/wp-content/uploads/2020/08/dummy-profile-pic.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add margin to separate each sidebar item */
+}
+
+.sidebar-item > * {
+    margin-right: 20px; /* Add spacing between icon and text */
+}
+
+.home {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    background-image: url('icons/home.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*for setting the icons color */
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+.profile-dashboard {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    background-image: url('icons/face-agent.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*for setting the icons color */
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+
+.messages {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    background-image: url('icons/message-text-outline.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*for setting the icons color */
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+.history {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    background-image: url('icons/history.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*for setting the icons color */
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+.tasks {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    background-image: url('icons/calendar-check.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*for setting the icons color */
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+.communities {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    background-image: url('icons/account-group.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*for setting the icons color */
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+
+.settings {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    background-image: url('icons/cog.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*for setting the icons color */
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+
+}
+
+.privacy {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    background-image: url('icons/lock-outline.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*for setting the icons color */
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
+
+.support {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    background-image: url('icons/face-agent.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*for setting the icons color */
+    filter: invert(90%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(90%) contrast(90%);
+}
